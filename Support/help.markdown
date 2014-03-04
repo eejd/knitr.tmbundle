@@ -6,13 +6,13 @@ This bundle produces basic [`knitr`](http://yihui.name/knitr/) funcationality in
 
 The bundle works in conjunction with the R bundle by using the same context for embedded R code: Use the regular couple of R commands to send code to R from TextMate.
 
-**Last modified**: 2012-06-21
+**Last modified**: 2014-02-20
 
 ## Using the bundle
 
 ### Language
 
-The `knitr` bundle uses a simple language configuration, essentially copying a couple of elements from the R and LaTeX bundles and adding code to recognize `knitr` code within a document. `knitr` files get the overall context of text.latex.sweave; this prevents the bundle from hijacking the gear menu for regular LaTeX files while allowing for the use of all the features of the LaTeX bundle within `knitr` files. It also parses \Sexpr{} commands inline and assigns them the context meta.sweave.latex so that they can be given their own color highlighting.
+The `knitr` bundle uses a simple language configuration, essentially copying a couple of elements from the R and LaTeX bundles and adding code to recognize `knitr` code within a document. `knitr` files get the overall context of text.latex.knitr; this prevents the bundle from hijacking the gear menu for regular LaTeX files while allowing for the use of all the features of the LaTeX bundle within `knitr` files. It also parses \Sexpr{} commands inline and assigns them the context meta.knitr.latex so that they can be given their own color highlighting.
 
 
 ### Usage
@@ -26,8 +26,9 @@ Typeset: When using the `knitr` Bundle, you should always set the TM_LATEX_MASTE
 
 The bundle includes a couple of snippets and commands that are as useful in R as they are in `knitr`:
 
-* Underscore (_) generates the R symbol <-. This is a familiar convention from  emacs' ESS package. (Longer-term, it makes sense to shift this over to the R bundle.)
 * Insert section/figure: Quick snippets for boilerplate `knitr` section and figure blocks.
+
+The commands are also explained at the [knitr.tmbundle GitHub repository](https://github.com/fonnesbeck/knitr.tmbundle). If you want to propose any changes, please submit a pull request.
 
 
 #### Contact
